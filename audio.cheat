@@ -1,0 +1,29 @@
+% dmuxaudio, helvum, audio
+
+# Run helvum
+helvum
+
+% dmuxaudio, helvum, audio, disown, tmux
+
+# Run helvum disown tmux
+helvum & disown; exit
+
+% dmuxaudio, carla, audio
+
+# Run carla
+carla
+
+% dmuxaudio, carla, audio, disown, tmux
+
+# Run carla disown tmux
+carla & disown; exit
+
+% dmuxaudio, qpwgraph, audio
+
+# Run qpwgraph
+qpwgraph
+
+% dmuxaudio, qpwgraph, audio, disown, tmux
+
+# Run qpwgraph disown tmux
+qpwgraph & disown; exit
