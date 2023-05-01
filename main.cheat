@@ -1,4 +1,8 @@
 % navi, edit, cheats
 
 # Edit navi cheats
-lf $(navi info cheats-path)
+lf $(navi info cheats-path)/phanirithvij__navi/main.cheat
+
+; https://github.com/denisidoro/navi/blob/master/docs/cheatsheet_repositories.md#auto-updating-repositories
+# Update cheets
+cd "$(navi info cheats-path)/phanirithvij__navi" && git pull -q origin main && cd -
