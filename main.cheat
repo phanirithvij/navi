@@ -1,3 +1,8 @@
+% zi, zoxide
+
+# zoxide
+zi; lf
+
 % navi, edit, cheats
 
 # Edit navi any cheat choose one
@@ -16,6 +21,12 @@ cd "<own_dir>" && git pull -q origin main && cd -
 bash <own_dir>/scripts/upd.bash
 
 $own_dir: echo $(navi info cheats-path)/phanirithvij__navi
+
+# edit navi config
+vim $(navi info cheats-path)
+
+# navi fn welcome
+navi fn welcome
 
 % shell, lf, fish
 lf -command "$ fish"
