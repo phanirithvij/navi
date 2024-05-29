@@ -1,3 +1,23 @@
+% nix, fmt, format, code
+
+# nix format code
+nix fmt
+
+% alejandra, nix, format, fmt
+
+# alejandra
+alejandra .
+
+% nixos, rebuild
+
+# nixos-rebuild switch flake
+nh os switch .
+
+% home-manager
+
+# home-manager rebuild
+nh home switch . -b bak
+
 % nix, update, system, packages
 
 # Update all nix packages
