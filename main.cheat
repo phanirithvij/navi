@@ -33,8 +33,13 @@ lf -command "$ fish"
 
 % xc, tasks
 
+; wish I could select fzf initial value but it seems not implemented
+; github.com/junegunn/fzf/issues/924
+# xc fzf multi
+xc -s | tac | fzf --multi | xargs -n1 xc
+
 # xc fzf
-xc $(xc -s | fzf)
+xc $(xc -s | tac | fzf)
 
 # xc
 xc
