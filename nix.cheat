@@ -1,12 +1,18 @@
+% nix, flake, update
+
+# nix flake update commit
+nix flake update --commit-lock-file
+
+# nix flake update
+nix flake update
+
 % nix, fmt, format, code
 
 # nix format code
 nix fmt
 
-% alejandra, nix, format, fmt
-
-# alejandra
-alejandra .
+# nixfmt
+nixfmt .
 
 % nixos, rebuild
 
