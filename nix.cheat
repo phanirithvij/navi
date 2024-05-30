@@ -12,7 +12,10 @@ nix flake update
 nix fmt
 
 # nixfmt
-nixfmt .
+nix run nixpkgs#nixfmt .
+
+# alejandra
+nix run nixpkgs#alejandra .
 
 % nixos, rebuild
 
@@ -23,6 +26,9 @@ nh os switch .
 
 # home-manager rebuild
 nh home switch . -b bak
+
+# home-manager generations
+home-manager generations
 
 % nix, update, system, packages
 
