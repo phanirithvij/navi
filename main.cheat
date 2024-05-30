@@ -30,3 +30,11 @@ navi fn welcome
 
 % shell, lf, fish
 lf -command "$ fish"
+
+% xc, tasks
+
+# xc fzf
+xc $(xc -s | fzf)
+
+# xc
+xc
