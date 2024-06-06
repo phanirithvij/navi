@@ -43,3 +43,11 @@ xc $(xc -s | tac | fzf)
 
 # xc
 xc
+
+% http, http-server
+
+# miniserve
+miniserve -rgzqUDWlH -u . --readme -c monokai -d monokai --verbose . -p 8081
+
+# python http.server
+python -m http.server
