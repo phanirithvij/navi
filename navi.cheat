@@ -18,10 +18,10 @@ cd "<own_dir>" && git pull -q origin main && cd -
 # Update cheats github script
 bash <own_dir>/scripts/upd.bash
 
-$own_dir: echo $(navi info cheats-path)/phanirithvij__navi
+$own_dir: echo $OWN_DIR/phanirithvij__navi
 
 # edit navi config
-vim $(navi info cheats-path)
+vim $(navi info config-path)
 
 # navi fn welcome
 navi fn welcome
