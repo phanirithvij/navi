@@ -3,11 +3,6 @@
 # zoxide
 zi; lf
 
-% shell, lf, fish
-
-# open shell
-lf -command "$ fish"
-
 % frequent, software
 
 # Firefox detatched
