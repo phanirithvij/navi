@@ -4,7 +4,26 @@
 zi; lf
 
 % shell, lf, fish
+
+# open shell
 lf -command "$ fish"
+
+% frequent, software
+
+# Firefox detatched
+firefox & disown; tmux splitw; exit
+
+# Telegram detatched
+telegram-desktop & disown; tmux splitw; exit
+
+# Gnome disks detatched
+gnome-disks & disown; tmux splitw; exit
+
+# Alacritty
+alacritty
+
+# Wezterm
+wezterm-gui &
 
 % xc, tasks
 
@@ -26,3 +45,28 @@ miniserve -rgzqUDWlH -u . --readme -c monokai -d monokai --verbose . -p 8081
 
 # python http.server
 python -m http.server
+
+% wifi, homewifi
+
+# Wifi sparkles
+echo $SPARKLES_WIFI_PASSWD | nmcli device wifi connect Sparkles --ask
+
+# Wifi tplink
+; https://unix.stackexchange.com/a/542952/312058
+echo $TPLINK_WIFI_PASSWD | nmcli device wifi connect TP-Link_C008 --ask
+
+# Wifi reset tplink
+nmcli con delete TP-Link_C008
+
+% go, upx, compress
+
+# Upx compress executable
+upx --ultra-brute --strip-relocs=0 upx --ultra-brute --strip-relocs=0 "<executable>"
+
+$ executable: find . -maxdepth 2 -type f -executable
+
+% nm-applet, nmapplet, appimagelaun
+
+# Kill nm-applet and appimagelaunerd
+killall nm-applet; killall appimagelauncherd
+
