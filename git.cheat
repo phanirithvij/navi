@@ -48,3 +48,17 @@ lazydocker
 
 # Colored paged json output
 <cmd> | jq -C | less -ReX
+
+;
+; --------------- gh --------------------
+;
+
+# gh pr changed files
+gh pr list --json number,files --limit 30 | fx
+
+# gh actions cache size (hack)
+gh cache list -S size_in_bytes --json sizeInBytes -L 300000 | jq '[.[].sizeInBytes] | add' | numfmt --to=iec-i --suffix=B --format="%9.2f"
+
+# gh actions-cache usage (faster)
+gh actions-cache list --order desc --sort size
+
