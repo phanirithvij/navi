@@ -9,3 +9,8 @@ sudo smbios-battery-ctl --set-charging-mode=custom --set-custom-charge-interval=
 # Get charging config
 sudo smbios-battery-ctl --get-charging-cfg
 
+# Get brightness percent
+xbacklight -get
+
+# Set brightness percent
+sudo xbacklight -set $(echo -e "1\n4\n20\n50\n100" | fzf)
