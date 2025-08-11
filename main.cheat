@@ -43,13 +43,6 @@ python -m http.server
 
 % wifi, homewifi
 
-# Wifi sparkles
-echo $SPARKLES_WIFI_PASSWD | nmcli device wifi connect Sparkles --ask
-
-# Wifi tplink
-; https://unix.stackexchange.com/a/542952/312058
-echo $TPLINK_WIFI_PASSWD | nmcli device wifi connect TP-Link_C008 --ask
-
 # Wifi reset tplink
 nmcli con delete TP-Link_C008
 
